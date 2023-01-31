@@ -1,0 +1,330 @@
+:root{
+    --Com:"Comfortaa";
+    --Mont:"Montserrat";
+    --Rob:"Roboto";
+    --blue:#040D1F;
+    --orange:#ED8E00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--blue);
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-top{
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bg 2s linear infinite;
+}
+@keyframes bg{
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+.top__text{
+    font-family: var(--Com);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    width: 166px;
+    margin-left: 24px;
+}
+.icon{
+    font-size: 40px;
+    color: white;
+    margin: 20px 0px;
+    animation: film 2s linear infinite;
+}
+@keyframes film {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.navber__text{
+    font-family: var(--Com);
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-link{
+    font-family: var(--Mont);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 40px 0px;
+}
+.nav-link:hover{
+    color: #BF7204;
+}
+.nav-link:hover::after{
+    content: "";
+    position: absolute;
+    background: #BF7204;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nav-logo{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    overflow-x: hidden;
+    animation: navIcon 3s linear 1;
+}
+@keyframes navIcon {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+
+.king__img{
+    width: 100%;
+}
+.info__title{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #fff;
+}
+.info__text{
+    font-family: var(--Mont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C8C8C8;
+    width: 570px;
+    text-align: justify;
+}
+.watch__btn{
+    width: 166px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background: var(--orange);
+    font-family: var(--Rob);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue);
+    border-radius: 4px;
+}
+.Download__btn{
+    width: 166px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background: var(--blue);
+    font-family: var(--Rob);
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+}
+.king__info{
+    background: rgba(7, 15, 25, 0.75);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: bgAnime 2s linear 1;
+}
+@keyframes bgAnime {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.king{
+    position: relative;
+}
+.info-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    animation: animeleft 1s linear 1;
+}
+@keyframes animeleft {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.film__title{
+    font-family: var(--Com);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--orange);
+    position: relative;
+    display: inline-block;
+}
+.film__title::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--orange);
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.films{
+    position: relative;
+}
+.Black_Panther{
+    width: 255px;
+    height: 368px;
+    position: relative;
+    margin: 54px 0;
+    transition: 0.3s;
+}
+.Black_Panther:hover{
+    transform: scale(1.1);
+}
+.Black_Panther_info{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Black_Panther_img{
+    width: 100%;
+}
+.play{
+    font-size: 46px;
+    color: #fff;
+    margin: 54px 0 0;
+}
+.Black_Panther_time{
+    font-family: var(--Mont);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    padding: 6px 26px;
+    width: 100px;
+    height: 24.15px;
+    margin: 12px 0 0;
+}
+.Black_Panther_name{
+    font-family: var(--Mont);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fff;
+    margin: 38px 0 0;
+}
+.Black_Panther_txt{
+    font-family: var(--Rob);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    width: 226px;
+    color: #fff;
+    margin: 12px 0 0;
+}
+.films-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.black_widow{
+    position: relative;
+}
+.black_widow-info{
+    height: 500px;
+    position: absolute;
+    background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.black_widow_img{
+    width: 829px;
+    position: absolute;
+    right: 0%;
+}
+.black_widow-logo{
+    width: 445px;
+    height: 99px;
+}
+.black_widow-txt{
+    font-family: var(--Rob);
+    font-weight: 400;
+    font-size: 18px;
+    width: 558px;
+    line-height: 27px;
+    text-align: justify;
+    color: #000000;
+    margin-top: 51px;
+}
+.black_widow-btn{
+    font-family: var(--Rob);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #000000;
+    width: 166px;
+    height: 46px;
+    border: none;
+    border-radius: 4px;
+    background: var(--orange);
+    margin-top: 55px;
+}
